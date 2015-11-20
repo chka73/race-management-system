@@ -10,7 +10,7 @@ public class Token {
     /**
      * Security Token
      */
-    @ApiModelProperty(value = "Security Token", required = true)
+    @ApiModelProperty(value = "Session ID", required = true)
     private String token;
 
     public Token() {
