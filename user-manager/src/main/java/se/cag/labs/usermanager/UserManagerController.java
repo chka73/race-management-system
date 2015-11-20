@@ -20,7 +20,7 @@ public class UserManagerController {
     @Autowired
     private SessionRepository sessionRepository;
 
-    @RequestMapping("/users")
+    @RequestMapping(path = "/users", method = RequestMethod.GET)
     public List<User> getUsers() {
         List<User> result = userRepository.findAll();
         result.stream().forEach(u -> u.setPassword(""));
